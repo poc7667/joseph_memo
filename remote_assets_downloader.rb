@@ -42,6 +42,12 @@ class RemoteAssetsDownloader
     do_download
     ap(@assets)
   end
+
+  def export_html
+    tidy = Nokogiri::XSLT File.open('tidy.xsl')
+    nice = tidy.transform(@page).to_html    
+    File.open("new.html", "w") { |io| io.write(nice) }
+  end
   
   def do_download
     f = open('html.txt', 'w')
