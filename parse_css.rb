@@ -11,11 +11,13 @@ require 'fileutils'
 
 class ParseCss
   def initialize(css_fpath)
+    @url_prefix = 'http://turbo.themezilla.com/memo/wp-content/themes/memo'
     open(css_fpath, 'r').each do |line|
       m = line.scan /(.*)(url\()(.*)(\))/
       if m.count > 0
         file = m[0][2]
         FileUtils::mkdir_p Pathname.new(file).dirname.to_s
+        system("curl #{@url_prefix}/#{file} -o #{file}" )
       end
     end
   end
