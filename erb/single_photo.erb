@@ -1,0 +1,21 @@
+<% @articles.each_with_index do |article, i| %>
+  <div class="post-<%=i%> post type-post status-publish format-standard hentry category-uncategorized tag-standard" id="post-<%=i%>">
+    <div class="post-header">      
+        <img class="attachment-tz_featured wp-post-image" height="389" src="<%= article[:img_path] %>" width="600"/>
+      </a>
+      <span class="hanger-left"></span>
+      <span class="hanger-right"></span>
+    </div>
+    <div class="entry-header">
+      <h2 class="entry-title">
+        <% article[:title] %>
+      </h2>
+    </div>
+    <div class="entry-content clearfix">
+      <p>
+        <%= article[:content] %>
+      </p>
+      
+    </div>
+  </div>
+<% end %> 
