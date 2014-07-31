@@ -95,6 +95,11 @@ a img {
     border: none; 
     vertical-align: bottom;
 }
+a logo img {
+ border: none; 
+ vertical-align: bottom;   
+ border-radius: 25%;
+}
 
 p,
 pre,
