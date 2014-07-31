@@ -781,6 +781,10 @@ span.edit-post a:hover { color: #40454d; }
 	display: block;
 	margin: 0 auto;
 	vertical-align: bottom;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 400px;    
 }
 
 .slider .prev,
