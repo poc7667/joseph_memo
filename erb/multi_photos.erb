@@ -6,7 +6,7 @@
       </script>
       <div class="slider" data-loader="http://turbo.themezilla.com/memo/wp-content/themes/memo/images/ajax-loader.gif" id="slider-<%=i%>">
         <div class="slides_container clearfix">
-          <% article.img_path.each do |img_path| %>
+          <% article[:imgs].each do |img_path| %>
             <div>
               <img  height="400" src="<%= img_path %>" width="600"/>
             </div>
@@ -19,11 +19,15 @@
     </div>
     <div class="entry-header">
       <h2 class="entry-title">
-        <a href="http://demo.themezilla.com/memo/the-hidden-message-of-jingle-bells/" rel="bookmark" title="Permanent Link to The Hidden Message of Jingle Bells">The Hidden Message of Jingle Bells</a>
+        <%= "#{article[:name]}: #{article[:title]}"  %>
       </h2>
     </div>
     <div class="entry-content clearfix">
-      <p>Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      <p>
+        <% article[:content].each do |line| %>
+          <%= "#{line}<br>"  %>   
+        <% end %>
+      </p>
     </div>
   </div>
 <% end %>

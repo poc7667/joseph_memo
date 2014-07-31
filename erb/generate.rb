@@ -4,15 +4,36 @@ require 'pry-byebug'
 require 'erb'
 require 'erubis'
 require 'awesome_print'
-def get_users
-  %w(a b c)
-end
-# tmpl = ERB.new im_file, nil, "%"
-# p tmpl.result(binding)
+require 'pathname'
+require './assets.rb'
+
+@articles = {}
+
 
 def get_partial(file_name)
   ERB.new(File.new(file_name).read).result(binding)
 end
+
+def group_articles_type(assets)
+  articles = {
+    no_photo: [],
+    single_photo: [],
+    multi_photos: []
+  }
+  assets.each do |user|
+    case user[:imgs].count 
+    when 0
+      articles[:no_photo] << user.clone
+    when 1
+      articles[:single_photo] << user.clone
+    else
+      articles[:multi_photos] << user.clone
+    end
+  end
+  articles
+end
+
+
 
 class MemoList
   include ERB::Util
@@ -36,7 +57,7 @@ end
 
 class Partial
   include ERB::Util
-  def initialize(articles, template_path)
+  def initialize(template_path, articles=[])
     @articles = articles
     @template = File.open(template_path).read 
   end
@@ -44,29 +65,20 @@ class Partial
     ERB.new(@template).result(binding)
   end
 end
-non_photos_articles =[
-  {
-    title: "who r you",
-    content: "dildo"
-    },
-  {
-    title: "who r you2",
-    content: "dildo"
-  }
-]
-video_articles =[
-  {
-    video_path: "http://123",
-    title: "hdiqhd",
-    content: "djifje"
-  }
-]
 
-non_photos_partial = Partial.new(non_photos_articles, 'non_photos.erb')
-videos_partial = Partial.new(video_articles, 'videos.erb')
-puts videos_partial.render
-# puts vv.render
-binding.pry
+
+
+@partials=[]
+group_articles_type(Assets.new.load).each do |group|
+  next if group.last.count == 0
+  article_type = group.first.to_s
+  @partials << Partial.new("#{article_type}.erb", group.last)
+end
+
+index = Partial.new("index.erb", @partials)
+File.open('../index.html', 'wb+') do |f|
+  f.write(index.render)
+end
 
 # partials = %w(videos.erb non_photos.erb sigle_photo.erb)
 # partials.each do |file_name|

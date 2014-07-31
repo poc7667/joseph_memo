@@ -1353,7 +1353,7 @@ label.error { color: red; }
     background: transparent url(../images/quote_left_small.png) no-repeat 0 5px;
 	padding: 0 0 0 15px;
 	margin-bottom: 10px;
-	text-align: center;
+	text-align: left;
 }
 
 .zilla-tweet-widget .twitter-time-stamp { 
