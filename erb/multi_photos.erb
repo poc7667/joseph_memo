@@ -12,7 +12,9 @@
             </div>
           <% end %>
           <% article[:videos].each do |video_path| %>
-            <iframe frameborder="0" src="<%= video_path.strip %>" width="600"></iframe>
+            <div>        
+              <iframe allowfullscreen="" frameborder="0" src="<%= video_path.strip %>" width="600" height="400" ></iframe>
+            </div>
           <% end %>
         </div>
       </div>
