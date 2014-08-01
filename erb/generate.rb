@@ -5,10 +5,9 @@ require 'erb'
 require 'erubis'
 require 'awesome_print'
 require 'pathname'
-require './assets.rb'
+require './user_assets.rb'
 
 @articles = {}
-
 
 def get_partial(file_name)
   ERB.new(File.new(file_name).read).result(binding)
@@ -66,10 +65,8 @@ class Partial
   end
 end
 
-
-
 @partials=[]
-group_articles_type(Assets.new.load).each do |group|
+group_articles_type(UserAssets.new.load).each do |group|
   next if group.last.count == 0
   article_type = group.first.to_s
   @partials << Partial.new("#{article_type}.erb", group.last)
