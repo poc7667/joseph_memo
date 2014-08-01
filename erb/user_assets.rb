@@ -37,7 +37,6 @@ class UserAssets
 
   def get_article_content(user_folder, user)
     File.open(get_article(user_folder)).each_with_index do |line, i|
-      binding.pry
       if 0==i
         user[:title] = line.rstrip
       elsif line.include? "youtube"
