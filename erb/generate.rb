@@ -70,7 +70,7 @@ group_articles_type(UserAssets.new.load).each do |group|
   @partials << Partial.new("#{article_type}.erb", group.last)
 end
 
-index = Partial.new("index.erb", @partials)
+index = Partial.new("index.erb", @partials.shuffle)
 File.open('../index.html', 'wb+') do |f|
   f.write(index.render)
 end
