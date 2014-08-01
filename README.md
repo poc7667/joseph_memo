@@ -1,48 +1,34 @@
 # 分享你的照片、音樂、與留言
 
-請將分享的內容放在一個資料夾
+建立一個資料夾，命名為你的"署名"
+放入要分享的照片(optional)
+接著建立一個新的純文字檔案(txt)，存放想訴說的留言話語
 
-資料夾名稱將會當做您的`顯示姓名`
+# 文字檔撰寫方式
 
-將要分享的照片放在資料夾中。(optional)
+* `第一行文字`將作為標題使用。
 
-接著建立一個文字檔txt，把訴說的話語記錄於其中。
+* 如想分享 Youtube 影片音樂，請直接將網址貼在文字檔案。
 
-# words.txt
-
-`第一行文字`將作為標題使用。
-
-如果你有要提供 Youtube 影片音樂，請直接複製網址貼在裡面。
-以我為例，我的 `words.txt` 內容為
-
-    在你剛啟航的 ”第二人生” 請別忘了我們
-    https://www.youtube.com/watch?v=amv7CzCmHU0
-    https://www.youtube.com/watch?v=qVKLNfbpCZ0
-    儘管見面的次數很少，
-    但對於你安靜的離去，
-    心裡還是留下許多惆悵。
-    前幾天看到你老哥留下的蘇軾詞曲 “水調歌頭” 訴說的兄弟情誼，也讓我想到將 “江城子”這首詞，我想在你心中也有住著思念的人吧 “十年生死兩茫茫，不思量，自難忘...”
-
-    如果要說起你在我心中的印象，那就是...
-
-    出遊的時候，
-    總是可以看到你滿是搞怪的照片。
-    KTV唱歌的時候，
-    還記得聽到你那動感的”東區東區”
-
-    你的習慣就是喜歡留給朋友歡樂的一面，
-    這次換我們整理出你留給我們的歡樂，滿滿一整頁。
-
-    See you~ Bro
-
-
-# 目錄格式 (以我當範例)
+* 以下面為例，最後那三行 Youtube 網址會直接轉換為影片內嵌於網站
 	
-	poc
-	├── images
-	│   ├── 31074_1486842615052_1329420_n.jpg
-	│   └── 31074_1486842655053_3501426_n.jpg
-	└── words.txt
+	    在你剛啟航的 ”第二人生” 請別忘了我們
+	    
+		 ~~~
+	
+	    See you~ Bro
+	    
+	    https://www.youtube.com/watch?v=xgFC_ibUC94&feature=youtu.be
+	    https://www.youtube.com/watch?v=amv7CzCmHU0
+	    https://www.youtube.com/watch?v=qVKLNfbpCZ0	    
+
+# 目錄格式 ([請參考](https://github.com/poc7667/joseph_memo/tree/master/users/poc))
+
+# 注意
+
+* 資料夾名稱，會當做你的名字顯示在網站上。
+* 每天會抽時間，將分享的資料轉換到網站上。
 
 # 寄送你的分享
-請將檔案寄送給 連志堅 brandon.red0@gmail.com
+
+* 請將檔案寄送給 連志堅 brandon.red0@gmail.com
