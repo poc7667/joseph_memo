@@ -20,7 +20,7 @@ def group_articles_type(assets)
     multi_photos: []
   }
   assets.each do |user|
-    case user[:imgs].count 
+    case (user[:imgs].count+user[:videos].count)
     when 0
       articles[:no_photo] << user.clone
     when 1
@@ -31,8 +31,6 @@ def group_articles_type(assets)
   end
   articles
 end
-
-
 
 class MemoList
   include ERB::Util
@@ -76,15 +74,3 @@ index = Partial.new("index.erb", @partials)
 File.open('../index.html', 'wb+') do |f|
   f.write(index.render)
 end
-
-# partials = %w(videos.erb non_photos.erb sigle_photo.erb)
-# partials.each do |file_name|
-#   p file_name
-#   p3=get_partial(file_name)
-#   binding.pry
-# end
-
-# im_file = File.open('index.erb')
-# im_tmpl = im_file.read
-# memo = MemoList.new(get_users, im_tmpl)
-# binding.pry
