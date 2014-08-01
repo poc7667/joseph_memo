@@ -8,8 +8,11 @@
         <div class="slides_container clearfix">
           <% article[:imgs].each do |img_path| %>
             <div>
-              <img  height="400" src="<%= img_path %>" width="600"/>
+              <img src="<%= img_path %>" width="600" height="400"/>
             </div>
+          <% end %>
+          <% article[:videos].each do |video_path| %>
+            <iframe frameborder="0" height="338" src="<%= video_path.strip %>" width="600"></iframe>
           <% end %>
         </div>
       </div>
@@ -19,7 +22,7 @@
     </div>
     <div class="entry-header">
       <h2 class="entry-title">
-        <%= "#{article[:name]}: #{article[:title]}"  %>
+        <%= "#{article[:name].capitalize}: #{article[:title]}"  %>
       </h2>
     </div>
     <div class="entry-content clearfix">
