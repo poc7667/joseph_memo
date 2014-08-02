@@ -8,7 +8,6 @@ require 'pathname'
 require './user_assets.rb'
 
 @articles = {}
-
 def get_partial(file_name)
   ERB.new(File.new(file_name).read).result(binding)
 end
@@ -23,8 +22,6 @@ def group_articles_type(assets)
     case (user[:imgs].count+user[:videos].count)
     when 0
       articles[:no_photo] << user.clone
-    when 1
-      articles[:single_photo] << user.clone
     else
       articles[:multi_photos] << user.clone
     end
