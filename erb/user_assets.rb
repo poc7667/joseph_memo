@@ -7,6 +7,7 @@ require 'erubis'
 require 'awesome_print'
 require 'pathname'
 
+
 class UserAssets
   attr_accessor :result
   def initialize
