@@ -1,4 +1,5 @@
 # encoding: utf-8
+Encoding.default_external = "UTF-8"
 require 'pry'
 require 'pry-nav'
 require 'pry-byebug'
