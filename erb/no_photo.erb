@@ -1,10 +1,9 @@
 <% if @articles %>
-  <% require 'pry'; binding.pry %>
   <% @articles.each_with_index do | article , i| %>
     <div class="post-<%=i%> post type-post status-publish format-aside hentry category-uncategorized tag-post-format-aside" id="post-no-photo-<%=i%>">
       <div class="entry-header">
         <h2 class="entry-title"> 
-          <% "#{article[:name]}: #{article[:title]}"  %>
+          <%= "#{article[:name]}: #{article[:title]}"  %>
         </h2>
       </div>
       <div class="entry-content clearfix">
