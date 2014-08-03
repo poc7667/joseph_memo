@@ -7,7 +7,8 @@ require 'erb'
 require 'erubis'
 require 'awesome_print'
 require 'pathname'
-require './user_assets.rb'
+helper_file = File.expand_path('user_assets.rb', File.dirname(__FILE__))
+require helper_file
 
 @articles = {}
 def get_partial(file_name)
@@ -70,6 +71,7 @@ group_articles_type(UserAssets.new.load).each do |group|
 end
 
 index = Partial.new("index.erb", @partials.shuffle)
-File.open('../index.html', 'wb+') do |f|
+output_file = File.expand_path('../index.html', File.dirname(__FILE__))
+File.open(output_file.to_s, 'wb+') do |f|
   f.write(index.render)
 end
