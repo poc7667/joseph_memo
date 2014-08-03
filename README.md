@@ -1,38 +1,29 @@
 # 分享你的照片、音樂、與留言
 
-建立一個資料夾，命名為你的"署名"
+Hi All, 
 
-放入要分享的照片(optional)
+如果你還有些話想說
 
-接著建立一個新的純文字檔案(txt)，存放想訴說的留言話語。
+不論是還來不及給分享給老頭的照片或文字
 
+或者是再說一萬次也不嫌多的祝福
 
-# 文字檔撰寫方式
+可以透過下面的網頁進行分享
 
-* `第一行文字`將作為標題使用。
+內容將會保存在一個靜態網站，之後可以供給大家下載，永久保存這份紀念
 
-* 如想分享 Youtube 影片音樂，請直接將網址貼在文字檔案。
+* [進行分享](http://4am-lesson.com/joseph_memos)
+* [分享給老頭的網站](http://joseph-1986-01-21.info/)
 
-* 以下面為例，最後那三行 Youtube 網址會直接轉換為影片內嵌於網站
-	
-	    在你剛啟航的 ”第二人生” 請別忘了我們
-	    
-		 ~~~
-	
-	    See you~ Bro
-	    
-	    https://www.youtube.com/watch?v=xgFC_ibUC94&feature=youtu.be
-	    https://www.youtube.com/watch?v=amv7CzCmHU0
-	    https://www.youtube.com/watch?v=qVKLNfbpCZ0	    
+# 如何分享
 
-# 分享資料範例 ([請參考](https://github.com/poc7667/joseph_memo/tree/master/users/poc))
+* [點擊此網頁](http://4am-lesson.com/joseph_memos)，並且在依照下面的格式進行填寫
 
-# 注意事項
-
-* 資料夾名稱，會當做你的名字顯示在網站上。
-* 每天會抽時間，將分享的資料轉換到網站上，每次新產生的文章順序接為亂數。
+![教學](https://raw.githubusercontent.com/poc7667/joseph_memo/master/howto.png)
+ 
+# 附註
+* 產生的文章順序為亂數排序。
 * 這是一個以靜態方式呈現的網站，結束之後會把大家共同匯集的資料，分享給大家下載。
+* 如果內容有任何 Bug，或者建議，歡迎直接來信 poc7667@gmail.com
 
-# 寄送你所分享的資料
 
-* 請將檔案寄送給 連志堅 brandon.red0@gmail.com
