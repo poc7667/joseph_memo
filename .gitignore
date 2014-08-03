@@ -1,4 +1,8 @@
 tmp
 ./index.html
 index.html/
+index.html
 users/
+users/*
+
+/index.html
