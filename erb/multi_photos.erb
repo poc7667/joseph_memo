@@ -9,23 +9,23 @@
         <div class="slides_container clearfix">
           <% article[:imgs].each do |img_path| %>
             <div>
-              <img src="<%= img_path %>" width="600" height="400"/>
+            <img src="<%= img_path %>" width="600" height="400"/>
             </div>
-          <% end %>
+          <% end %>          
           <% article[:videos].each do |video_path| %>
             <div>        
               <iframe allowfullscreen="" frameborder="0" src="<%= video_path.strip %>" width="600" height="400" ></iframe>
-            </div>
+            </div>          
           <% end %>
         </div>
       </div>
-      <a href="http://demo.themezilla.com/memo/the-hidden-message-of-jingle-bells/" title="Permanent Link to The Hidden Message of Jingle Bells"></a>
+      
       <span class="hanger-left"></span>
       <span class="hanger-right"></span>
     </div>
     <div class="entry-header">
       <h2 class="entry-title">
-        <%= "#{article[:name].capitalize}: #{article[:title]}"  %>
+        <%= "#{article[:name].capitalize}: #{article[:title]}"  %>        
       </h2>
     </div>
     <div class="entry-content clearfix">

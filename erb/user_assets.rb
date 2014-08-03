@@ -34,9 +34,14 @@ class UserAssets
   end
 
   def convert_youtube_url(youtube_url)
-    regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
-    m = youtube_url.scan(regExp)
-    return "http://www.youtube.com/embed/#{m[0].last}".strip
+    begin
+      regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
+      m = youtube_url.scan(regExp)
+      return "http://www.youtube.com/embed/#{m[0].last}".strip      
+    rescue Exception => e
+      return ''
+    end
+
   end
 
   def get_username_from_txt(line)
