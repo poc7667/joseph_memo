@@ -1,0 +1,42 @@
+!!! XML
+%rss{:version => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom", "xmlns:content" => "http://purl.org/rss/1.0/modules/content/", "xmlns:dc" => "http://purl.org/dc/elements/1.1/", "xmlns:slash" => "http://purl.org/rss/1.0/modules/slash/", "xmlns:sy" => "http://purl.org/rss/1.0/modules/syndication/", "xmlns:wfw" => "http://wellformedweb.org/CommentAPI/"}
+  %channel
+    %title Fluxus » inspiring
+    %atom:link{:href => "http://inthe.me/demo/fluxus/tag/inspiring/feed/", :rel => "self", :type => "application/rss+xml"}/
+    = succeed "http://inthe.me/demo/fluxus" do
+      %link/
+    %description portfolio theme for creatives
+    %lastbuilddate Sun, 04 May 2014 19:51:50 +0000
+    %language en-US
+    %sy:updateperiod hourly
+    %sy:updatefrequency 1
+    %generator http://wordpress.org/?v=3.9.2
+    %item
+      %title Sunset
+      = succeed "http://inthe.me/demo/fluxus/sunset/" do
+        %link/
+      %comments http://inthe.me/demo/fluxus/sunset/#comments
+      %pubdate Mon, 03 Dec 2012 17:17:23 +0000
+      %dc:creator
+        :cdata
+          intheme
+      %category
+        :cdata
+          Photography
+      %category
+        :cdata
+          black and white
+      %category
+        :cdata
+          inspiring
+      %guid{:ispermalink => "false"} http://inthe.me/demo/fluxus/?p=272
+      %description
+        :cdata
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum porttitor elit nec vehicula. Sed luctus sapien at odio consequat viverra. Nam in nulla orci, scelerisque consectetur purus. Nam ac magna libero. Nullam porta placerat sapien.<div class="wrap-excerpt-more"><a class="excerpt-more" href="http://inthe.me/demo/fluxus/sunset/">Continue reading</a></div>
+      %content:encoded
+        :cdata
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum porttitor elit nec vehicula. Sed luctus sapien at odio consequat viverra. Nam in nulla orci, scelerisque consectetur purus. Nam ac magna libero. Nullam porta placerat sapien, at tincidunt arcu blandit non. Vestibulum tristique auctor lectus, sed dignissim ante pretium vel. Phasellus et mi leo. Nullam consequat, est id feugiat dignissim, turpis tortor scelerisque elit, laoreet semper enim dui in arcu.</p>
+          <p>Aenean iaculis libero ac metus condimentum pharetra. Phasellus feugiat tortor et dui laoreet pellentesque. Aliquam erat volutpat. Maecenas ultrices dolor nec urna suscipit sit amet interdum velit dictum. Nam dapibus nunc quis orci consequat tempus. Mauris vel pellentesque augue. Cras magna risus, volutpat ut hendrerit sed, sollicitudin in augue. Cras vel risus mauris, ac pellentesque ipsum.</p>
+      %wfw:commentrss http://inthe.me/demo/fluxus/sunset/feed/
+      %slash:comments 0
+/ Served from: inthe.me @ 2014-08-30 04:38:23 by W3 Total Cache

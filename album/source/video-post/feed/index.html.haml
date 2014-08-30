@@ -1,0 +1,13 @@
+!!! XML
+%rss{:version => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom", "xmlns:content" => "http://purl.org/rss/1.0/modules/content/", "xmlns:dc" => "http://purl.org/dc/elements/1.1/", "xmlns:sy" => "http://purl.org/rss/1.0/modules/syndication/"}
+  %channel
+    %title Comments on: Video Post
+    %atom:link{:href => "http://inthe.me/demo/fluxus/video-post/feed/", :rel => "self", :type => "application/rss+xml"}/
+    = succeed "http://inthe.me/demo/fluxus/video-post/" do
+      %link/
+    %description portfolio theme for creatives
+    %lastbuilddate Sat, 10 Aug 2013 02:54:12 +0000
+    %sy:updateperiod hourly
+    %sy:updatefrequency 1
+    %generator http://wordpress.org/?v=3.9.2
+/ Served from: inthe.me @ 2014-08-30 04:38:08 by W3 Total Cache
