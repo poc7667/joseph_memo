@@ -8,7 +8,7 @@
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	Version: 1.4
-	
+
 	Designed & Handcrafted by ThemeZilla.com
 	All files, unless otherwise stated, are released under the GNU General Public License
 	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
@@ -76,9 +76,9 @@ body {
 	width:100%;
 }
 
-a { 
+a {
     color: #fa6274;
-    text-decoration: none; 
+    text-decoration: none;
     -webkit-transition: color .1s linear;
     -moz-transition: color .1s linear;
     -ms-transition: color .1s linear;
@@ -86,18 +86,18 @@ a {
     transition: color .1s linear;
 }
 
-a:hover { 
+a:hover {
     color: #5e6066;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-a img { 
-    border: none; 
+a img {
+    border: none;
     vertical-align: bottom;
 }
 a logo img {
- border: none; 
- vertical-align: bottom;   
+ border: none;
+ vertical-align: bottom;
  border-radius: 25%;
 }
 
@@ -214,7 +214,7 @@ h6 {
     margin: 0 auto;
     min-height: 100%;
 }
-	
+
 #primary {}
 
 .layout-2cl #primary { float: right; }
@@ -249,7 +249,7 @@ h6 {
 	color: #a4a5aa;
 	font-size: 11px;
 	line-height: 1.4;
-	margin: 0 9px 60px;
+	margin: 0 9px 10px;
 	padding: 0 17px 0 10px;
 }
 
@@ -296,15 +296,15 @@ h6 {
 /*-----------------------------------------------------------------------------------*/
 
 /*** ESSENTIAL STYLES ***/
-.sf-menu, 
+.sf-menu,
 .sf-menu * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.sf-menu li { 
-	position: relative; 
+.sf-menu li {
+	position: relative;
 	white-space: nowrap;
 }
 
@@ -348,8 +348,8 @@ h6 {
 #primary-menu .current-menu-item > a,
 #primary-menu .sfHover > a { color: #ecedf3; }
 
-#primary-menu > li > a::before { 
-	color: #a4a5aa; 
+#primary-menu > li > a::before {
+	color: #a4a5aa;
 	content: '/';
 	margin-right: 9px;
 }
@@ -664,19 +664,19 @@ h2.entry-title a {
 h2.entry-title a:hover { color: #fa6274; }
 
 .entry-title span.edit-post,
-.page-title span.edit-post { 
-    float: right; 
+.page-title span.edit-post {
+    float: right;
     font-size: 11px;
     font-weight: normal;
 }
 
-.entry-title span.edit-post a { 
+.entry-title span.edit-post a {
     font-size: 10px;
     font-weight: normal;
 }
 
 span.edit-post a:hover { color: #40454d; }
-    
+
 .entry-content {
     background: transparent url(../images/paper_mid.png) 0 0 repeat-y;
     height: 100%;
@@ -737,8 +737,8 @@ span.edit-post a:hover { color: #40454d; }
 
 .entry-tags { color: #a4a5aa; }
 
-.entry-tags a { 
-    background-image: none; 
+.entry-tags a {
+    background-image: none;
     padding-left: 0;
 }
 
@@ -752,12 +752,12 @@ span.edit-post a:hover { color: #40454d; }
     color: #fa6274;
 }
 
-.entry-comments { 
-    float: right; 
+.entry-comments {
+    float: right;
     margin-right: 10px;
 }
 
-.entry-comments a { 
+.entry-comments a {
     background-position: 0 -96px;
     padding-left: 21px;
 }
@@ -792,7 +792,7 @@ span.edit-post a:hover { color: #40454d; }
     width: auto;
     max-width: 600px;
     height: auto;
-    max-height: 400px;    
+    max-height: 400px;
 }
 
 .slider .prev,
@@ -822,9 +822,9 @@ span.edit-post a:hover { color: #40454d; }
 
 /* Audio/Video --------------------------------*/
 div.jp-jplayer.jp-jplayer-video,
-div.jp-jplayer.jp-player-video { 
+div.jp-jplayer.jp-player-video {
     background-color: #292a2b;
-    width: 100%; 
+    width: 100%;
 }
 
 .jp-jplayer-audio { background: url("../images/dark_bg.jpg")!important; }
@@ -869,8 +869,8 @@ a.jp-play { background: url(../images/jplayer-black-and-yellow.png) 0 0 no-repea
 
 a.jp-play:hover { background-position: -33px 0; }
 
-a.jp-pause { 
-    background: url(../images/jplayer-black-and-yellow.png) 0 -30px no-repeat; 
+a.jp-pause {
+    background: url(../images/jplayer-black-and-yellow.png) 0 -30px no-repeat;
     display: none;
 }
 
@@ -885,8 +885,8 @@ a.jp-pause:hover { background-position: -33px -30px; }
 	padding: 12px 10px;
 }
 
-.jp-progress { 
-    position: absolute; 
+.jp-progress {
+    position: absolute;
 	width: 448px;
 	height: 7px;
 	padding: 1px;
@@ -1046,15 +1046,15 @@ h3#pings {
 
 #commentform { margin-top: 20px; }
 
-#commentform input { 
-    margin-right: 10px; 
+#commentform input {
+    margin-right: 10px;
     width: 200px;
 }
 
 #commentform textarea { width: 97%; }
 
-.children { 
-    list-style-type: none; 
+.children {
+    list-style-type: none;
     margin-left: 55px;
 }
 
@@ -1072,13 +1072,13 @@ h3#pings {
 	border: #fa6274;
 }
 
-.comment-author { 
-    display: inline-block; 
+.comment-author {
+    display: inline-block;
     margin-right: 5px;
 }
 
-.comment-author cite { 
-    font-weight: bold; 
+.comment-author cite {
+    font-weight: bold;
     font-size: 14px;
     font-style: normal;
 }
@@ -1087,8 +1087,8 @@ h3#pings {
 
 .comment-author cite a:hover { color: #fa6274; }
 
-.comment-meta { 
-    display: inline-block; 
+.comment-meta {
+    display: inline-block;
     font-size: 11px;
 }
 
@@ -1098,8 +1098,8 @@ h3#pings {
 
 .comment-body { margin: 0 0 30px 55px; }
 
-#respond { 
-    margin: 0 35px; 
+#respond {
+    margin: 0 35px;
     padding-bottom: 35px;
     text-shadow: 0 1px 0 rgba(255,255,255,1);
 }
@@ -1109,7 +1109,7 @@ h3#pings {
     font-weight: bold;
 }
 
-.commentlist #respond { 
+.commentlist #respond {
     background: #f1f1f1;
     margin: 0;
     padding: 10px 35px;
@@ -1124,7 +1124,7 @@ h3#pings {
 
 .comment-body ol { list-style-type: decimal; }
 
-#commentform #submit { 
+#commentform #submit {
     background: #fff url(../images/button.png) 0 0 repeat-x;
     -border-radius: ;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
@@ -1136,7 +1136,7 @@ h3#pings {
     -moz-border-radius: 4px;
     border-radius: 4px;
     color: #5e6066;
-    cursor: pointer; 
+    cursor: pointer;
     font-weight: bold;
     height: 30px;
     outline: none;
@@ -1200,12 +1200,12 @@ h3#pings {
        -moz-border-radius: 4px 4px 0 0;
             border-radius: 4px 4px 0 0;
     color: #a4a5aa;
-	padding: 15px 20px 25px;
+	padding: 10px 20px 5px;
 	height: 30px;
 	font-size: 11px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -70px;
+    margin-top: -40px;
     position: relative;
     width: 600px;
 }
@@ -1223,10 +1223,10 @@ h3#pings {
 /*	9.	Page Templates
 /*-----------------------------------------------------------------------------------*/
 
-.search-no-results #s { 
+.search-no-results #s {
     margin-bottom: 12px;
     margin-top: 6px;
-    width: 200px; 
+    width: 200px;
 }
 
 .archive-lists .children { margin-bottom: 0; }
@@ -1244,7 +1244,7 @@ h3#pings {
 .contactform li label {
 	display: block;
 	margin-bottom: 0;
-}   
+}
 
 .contactform li input[type="text"] {
 	width: 300px;
@@ -1258,7 +1258,7 @@ h3#pings {
 	margin-bottom:15px;
 }
 
-.contactform li button { 
+.contactform li button {
     background: #fff url(../images/button.png) 0 0 repeat-x;
     -border-radius: ;
     -webkit-box-shadow: none;
@@ -1274,11 +1274,11 @@ h3#pings {
     -moz-border-radius: 4px;
     border-radius: 4px;
     color: #5e6066;
-    cursor: pointer; 
+    cursor: pointer;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
-    float: right; 
+    float: right;
     height: 30px;
     padding: 7px 14px 9px;
     text-shadow: 0 1px 0 rgba(255,255,255,.4);
@@ -1297,8 +1297,8 @@ label.error { color: red; }
 /*	10.	Widgets
 /*-----------------------------------------------------------------------------------*/
 
-.widget { 
-    margin-bottom: 30px; 
+.widget {
+    margin-bottom: 30px;
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,1);
 }
@@ -1335,7 +1335,7 @@ label.error { color: red; }
 .widget .sub-menu { margin-left: 10px; }
 
 /* Search Widget ------------------------*/
-.widget_search #s { 
+.widget_search #s {
     background: #fff url(../images/search_icon.png) 10px 6px no-repeat;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -1348,8 +1348,8 @@ label.error { color: red; }
 .widget_search fieldset { margin: 0; }
 
 /* Calander Widget ----------------------*/
-.widget_calendar caption { 
-    margin-bottom: 5px; 
+.widget_calendar caption {
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -1373,8 +1373,8 @@ label.error { color: red; }
 	text-align: left;
 }
 
-.zilla-tweet-widget .twitter-time-stamp { 
-    display: block; 
+.zilla-tweet-widget .twitter-time-stamp {
+    display: block;
     padding-right: 15px;
 }
 
@@ -1666,7 +1666,7 @@ a:hover.button.black { border: 1px solid #2c2c2c; }
 
 .toggle h4 {
 	font-size: 12px;
-	padding: 10px; 
+	padding: 10px;
 	background: #FBFBFB;
 	border: 1px solid #EFEFEF;
 	cursor: pointer;
@@ -1704,9 +1704,9 @@ a:hover.button.black { border: 1px solid #2c2c2c; }
 .ie7 .entry-footer { height: 88px; }
 
 .ie7 .comment-meta,
-.ie7 .comment-author { 
-    zoom: 1; 
-    display: inline; 
+.ie7 .comment-author {
+    zoom: 1;
+    display: inline;
 }
 
 .ie7 .entry-permalink,
