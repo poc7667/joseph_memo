@@ -16,12 +16,12 @@ class UserAssets
     self.result = []
   end
 
-  def get_images(user_folder, user)    
+  def get_images(user_folder, user)
     Dir["#{user_folder}/**/*"].each do |img|
       if img =~ /.*(jpg|png|gif)$/
         user[:imgs] <<  Pathname.new(img).relative_path_from(@root_path).to_s
       end
-    end        
+    end
   end
 
   def get_article(user_folder)
@@ -37,7 +37,7 @@ class UserAssets
     begin
       regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
       m = youtube_url.scan(regExp)
-      return "http://www.youtube.com/embed/#{m[0].last}".strip      
+      return "http://www.youtube.com/embed/#{m[0].last}".strip
     rescue Exception => e
       return ''
     end
@@ -50,7 +50,7 @@ class UserAssets
 
   def get_article_content(user_folder, user)
     begin
-      
+
       File.open(get_article(user_folder)).each_with_index do |line, i|
         if 0==i
           user[:title] = line.rstrip
@@ -66,7 +66,7 @@ class UserAssets
         else
           user[:content] << line.rstrip
         end
-      end          
+      end
     rescue Exception => e
       user[:title] = "找不到相關的留言文字檔案"
     end
@@ -77,12 +77,12 @@ class UserAssets
     assets_folder = File.expand_path('../users', File.dirname(__FILE__))
     Dir["#{assets_folder}/*"].each do | user_folder |
       next unless File.directory?(user_folder)
-      user = {name: nil,imgs:[], videos: [], title: '', content: []}      
+      user = {name: nil,imgs:[], videos: [], title: '', content: []}
       get_images(user_folder, user)
       get_article_content(user_folder, user)
-      user[:name] ||= user_folder.split('/').last      
+      user[:name] ||= user_folder.split('/').last
       if (user[:imgs].count + user[:videos].count + user[:content].count )> 0
-        self.result << user.clone 
+        self.result << user.clone
       end
     end
     result

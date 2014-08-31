@@ -2,7 +2,7 @@
 <% @articles.each_with_index do |article, i| %>
   <div class="post-<%=i%> post type-post status-publish format-gallery hentry category-uncategorized tag-post-format-gallery" id="post-multi-photos-<%=i%>">
     <div class="post-header">
-      <script>        
+      <script>
         jQuery(document).ready(function(){jQuery("#slider-<%=i%>").slides({preload:true,preloadImage:jQuery("#slider-<%=i%>").attr('data-loader'),generatePagination:false,generateNextPrev:true,effect:'fade',crossfade:true,autoHeight:true,bigTarget:true});});
       </script>
       <div class="slider" data-loader="http://turbo.themezilla.com/memo/wp-content/themes/memo/images/ajax-loader.gif" id="slider-<%=i%>">
@@ -11,27 +11,27 @@
             <div>
             <img src="<%= img_path %>" width="600" height="400"/>
             </div>
-          <% end %>          
+          <% end %>
           <% article[:videos].each do |video_path| %>
-            <div>        
+            <div>
               <iframe allowfullscreen="" frameborder="0" src="<%= video_path.strip %>" width="600" height="400" ></iframe>
-            </div>          
+            </div>
           <% end %>
         </div>
       </div>
-      
+
       <span class="hanger-left"></span>
       <span class="hanger-right"></span>
     </div>
     <div class="entry-header">
       <h2 class="entry-title">
-        <%= "#{article[:name].capitalize}: #{article[:title]}"  %>        
+        <%= "#{article[:name].capitalize}: #{article[:title]}"  %>
       </h2>
     </div>
     <div class="entry-content clearfix">
       <p>
         <% article[:content].each do |line| %>
-          <%= "#{line}<br>"  %>   
+          <%= "#{line}<br>"  %>
         <% end %>
       </p>
     </div>
