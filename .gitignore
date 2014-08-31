@@ -6,3 +6,13 @@ users/
 users/*
 
 /index.html
+/album
+/album/source/images/
+/album/source/resize_images/
+
+/album/source/index.html.haml
+/album/source/images/index.html.haml
+/album/source/gallery.html.haml
+/album/Gemfile.lock
+/album/Gemfile
+/album/config.rb
